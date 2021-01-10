@@ -1,5 +1,5 @@
 <?php
-
+require('config.php');
 session_start();
 class Chat
 {
@@ -8,7 +8,7 @@ class Chat
 
     public function __construct()
     {
-        $this->db = new PDO('mysql:host=localhost;dbname=simplechat', 'root', '');
+        $this->db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_USER, DB_PASSWORD);
         $alreadyExists = $this->db->query('SELECT 1 from message LIMIT 1');
         if(!$alreadyExists) $this->create(); 
 
