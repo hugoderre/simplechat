@@ -1,0 +1,5 @@
+CREATE TABLE message (
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    pseudo VARCHAR(100),
+    content TEXT
+)

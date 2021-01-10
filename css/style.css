@@ -1,0 +1,37 @@
+body {
+  background: url("../assets/img/background.png"); }
+
+.chat-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px !important;
+  max-width: 500px;
+  margin: auto; }
+
+.msg {
+  display: flex;
+  margin-bottom: 10px;
+  width: 500px;
+  overflow-wrap: break-word; }
+
+.msg_pseudo {
+  width: 100px;
+  margin-right: 10px; }
+
+.msg_content {
+  width: 350px; }
+
+#chat-messages {
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 20px;
+  width: 500px;
+  padding: 10px;
+  height: 500px;
+  background-color: white; }
+
+.error-notice {
+  display: block;
+  border: 1px solid red; }
+
+/*# sourceMappingURL=style.css.map */
